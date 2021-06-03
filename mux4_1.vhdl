@@ -10,7 +10,8 @@ architecture archMux4To1 of Mux4To1 is begin
         output <= input(0) when "00",
                   input(1) when "01",
                   input(2) when "10",
-                  input(3) when "11";
+                  input(3) when "11",
+                       '0' when others;
                  
 end archMux4To1;
                        
