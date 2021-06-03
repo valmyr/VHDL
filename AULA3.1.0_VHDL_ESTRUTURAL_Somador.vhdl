@@ -12,7 +12,7 @@ architecture archSomador of somador is
                            Cout    : out bit);
   end component;
   begin
-    Soma  : entXor(A,B,S);
-    vaiUm : entAnd(A,B,Cout);
+    Soma  : entXor port map(A,B,S);
+    vaiUm : entAnd port map(A,B,Cout);
 end archSomador;
     
