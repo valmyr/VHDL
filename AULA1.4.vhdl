@@ -13,5 +13,6 @@ architecture archSomador4bits of somador4bits
          extenA <= bit_vector("0" & A); --concatenando o caracter "0" com o vetor de 4 bits A
          extenB <= bit_vector("0" & B);
          soma_C <= bit_vector(unsigned(extenA)+unsigned(extenB));
+         S = bit_vector(soma_C(3 downto 0));
          Ts     <=  soma(4);
  end archSomador4Bits;
