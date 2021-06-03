@@ -14,5 +14,5 @@ architecture archSomador4bits of somador4bits is
          extenB <= bit_vector("0" & B);
          soma_C <= bit_vector(unsigned(extenA)+unsigned(extenB));
          S = bit_vector(soma_C(3 downto 0));
-         Ts     <=  soma(4);
- end archSomador4Bits;
+         Ts     <=  soma_C(4);
+ end archSomador4bits;
