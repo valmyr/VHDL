@@ -5,4 +5,4 @@ entity myFunction is
 architecture archMyFunction of myFunction is
    begin
      F <= (not(L) and not(M) and N) or (L and M);
-  end archMyFunction
+  end archMyFunction;
