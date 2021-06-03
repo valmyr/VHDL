@@ -4,7 +4,7 @@ use IEEE.std_logic.all;
 entity Mux4To1 is port(seletor : in bit_vector (1 downto 0);
                        input   : in bit_vector(7  downto 0);
                        output  : out std_logic);
-end Mux4to1;
+end Mux4To1;
 architecture archMux4To1 of Mux4To1 is begin
     with seletor select
         ouput <=input(0) when "000",
