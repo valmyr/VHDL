@@ -7,10 +7,10 @@ entity Mux4To1 is port(seletor : in bit_vector (1 downto 0);
 end Mux4To1;
 architecture archMux4To1 of Mux4To1 is begin
     with seletor select
-        output <= input(0) when "000",
-                  input(1) when "001",
-                  input(2) when "010",
-                  input(3) when "011";
+        output <= input(0) when "00",
+                  input(1) when "01",
+                  input(2) when "10",
+                  input(3) when "11";
                  
 end archMux4To1;
                        
