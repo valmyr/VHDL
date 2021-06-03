@@ -10,5 +10,5 @@ entity mySwitch is
 architecture archMySwitch of mySwitch is begin
   saida <= ent1 when seletor = '1' else
            ent0 when seletor = '0'  else
-            "0000";
+            "0000";-- "catch-all"
 end archMySwitch;
