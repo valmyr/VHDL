@@ -6,7 +6,7 @@ entity somador4bits is
        S     : out bit_vector(3 downto 0);
        Ts    : out bit);
 end somador4bits;
-architecture archSomador4bits of somador4bits
+architecture archSomador4bits of somador4bits is
        signal extenA,extenB: bit_vector(4 downto 0);
        signal soma_C       : unsigned (4 downto 0);
        begin
