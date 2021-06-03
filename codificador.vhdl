@@ -14,10 +14,10 @@ architecture archDecodificador of decodificador is
       Y <= "ZZZZ";
       if(enable = '1') then
           case input is
-            when "00" >= output <= "0001";
-            when "01" >= output <= "0010";
-            when "10" >= output <= "0100";
-            when "11" >= output <= "1000";
+            when "00" => output <= "0001";
+            when "01" => output <= "0010";
+            when "10" => output <= "0100";
+            when "11" => output <= "1000";
             when others => output <= "ZZZZ";
           end case;
       end if;
