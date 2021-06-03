@@ -8,5 +8,7 @@ entity mySwitch is
        seletor    : in bit);
   end mySwitch;
 architecture archMySwitch of mySwitch is begin
-  saida <= ent1 when seletor else ent0;
+  saida <= ent1 when seletor = 1 else
+           ent0 when seletor = 0  else
+            "0000";
 end archMySwitch;
