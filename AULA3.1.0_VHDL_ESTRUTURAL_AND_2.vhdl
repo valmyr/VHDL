@@ -8,3 +8,10 @@ end and2;
 architecture arch_and2 of and2 is  begin
   S <= A and B;
 end arch_and2;
+
+entity maioria is port(A,B,C : in bit;
+                       S     : out bit);
+end maioria;
+architecture archMaioria of maioria is begin
+  
+end archMaioria;
