@@ -11,5 +11,6 @@ architecture archMux4To1 of Mux4To1 is begin
                   input(1) when "001",
                   input(2) when "010",
                   input(3) when "011";
+                 
 end archMux4To1;
                        
