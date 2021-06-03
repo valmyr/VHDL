@@ -9,10 +9,10 @@ architecture archSomador of somador is
                             S    : out bit);
   end component;
   component entAnd is port(A, B : in bit;
-                           S    : out bit);
+                           Cout    : out bit);
   end component;
   begin
-    entXor(A,B,S);
-    entAnd(A,B,Cout);
+    Soma  : entXor(A,B,S);
+    vaiUm : entAnd(A,B,Cout);
 end archSomador;
     
