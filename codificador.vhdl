@@ -4,7 +4,7 @@ IEEE.numeric_bit.all;
 IEEE.std_logic.all;
 entity decodificador is port(input   : in bit_vector(1 downto 0);
                                 en   : in bit;
-                              output : out bit_vector(2 downto 0));
+                              output : out bit_vector(3 downto 0));
 end decodificador;
 architecture archDecodificador of decodificador is
   signal inputConcatenadoComEn : bit_vector(2 downto 0);
