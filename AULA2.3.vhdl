@@ -14,15 +14,15 @@ architecture archDisplay7Segments of display7Segments is begin
         output_P <= bit_vector("1110011" when '1',
                                "0000000" when '0',
                                "0000000" when others);
-  
+    with on_off select
         output_O <= bit_vector("0111111" when '1',
                                "0000000" when '0',
                                "0000000" when others);
-  
+    with on_off select
         output_L <= bit_vector("0111000" when '1',
                                "0000000" when '0',
                                "0000000" when others);
-
+    with on_off select
         output_I <= bit_vector("0110000" when '1',
                                "0000000" when '0',
                                "0000000" when others);       
