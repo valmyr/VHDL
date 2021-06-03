@@ -1,4 +1,11 @@
 --Ex.: Implementar a arquitetura do verificador de faixas de magnnitude de 4bits abaixo, usando with- selection
+--Entrada     -> Saída 
+--0000 a 0011 -> 100
+--0100 a 1001 -> 010
+--1010 a 1111 -> 001
+--valorDesconhecido - > 000
+--
+
 library IEEE;
 use IEEE.numeric_bit.all;
 entity checkMag is port(input  :in bit_vector(3 downto 0)
