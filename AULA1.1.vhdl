@@ -11,6 +11,6 @@ entity minha_entidade is
          s : out bit);
     architecture minha_arquitetura of minha_entidade is
       begin
-         s <=  ~y and x;
+         s <=  (not y) and x;
       end minha_arquitetura;
 end minha_entidade;
