@@ -1,3 +1,5 @@
+-- Atribuição condicional com seleção: with- select
+-- Ex .: Impressão de "P" "O" "L" "I" em display
 library IEEE;
 use IEEE.numeric_bit.all;
 entity display7Segments is port(contador   : in bit_vector(1 downto 0);
