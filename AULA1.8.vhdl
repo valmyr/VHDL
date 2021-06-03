@@ -12,7 +12,7 @@ entity myFunction is
   end myFunction;
 architecture archMyFunction  of myFunction is
   begin
-      f <= '1' when not(l) and not(m) and n else 
-           '1' when (l and n) else 
+      f <= '1' when (l = '0' and m = '0' and n = '1') else 
+           '1' when (l =' 1' and n = '1') else 
            '0'; 
    end archMyFunction;
