@@ -1,3 +1,4 @@
+-- decodificador 2 para 4 com enable.
 library IEEE;
 IEEE.numeric_bit.all;
 IEEE.std_logic.all;
