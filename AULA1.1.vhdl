@@ -9,8 +9,9 @@
 entity minha_entidade is 
     port(x,y: in bit;
          s : out bit);
-    architecture minha_arquitetura of minha_entidade is
-      begin
-         s <=  (not y) and x;
-      end minha_arquitetura;
 end minha_entidade;
+architecture minha_arquitetura of minha_entidade is
+    begin
+      s <=  (not y) and x;
+end minha_arquitetura;
+
