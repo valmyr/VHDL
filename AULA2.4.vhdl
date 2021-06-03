@@ -4,6 +4,7 @@ entity display7Segments is port(on_off   : in bit_vector(1 downto 0);
                                 output : out bit_vector(7 downto 0)--mais significativo = g e menos significativo = a
                                );
 end display7Segments;
+  
 architecture archDisplay7Segments of display7Segments is begin
     with on_off select
         output <= bit_vector("1110011" when '00',
