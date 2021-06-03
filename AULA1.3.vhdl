@@ -7,6 +7,6 @@ entity somador4bits is
 end somador4bits;
 architecture archSomador4bits of somador4bits
        begin
-         S <= bit_vector(unsigned(A) + usingned(B));
+         S <= bit_vector(unsigned(A) + unsigned(B));
  end archSomador4Bits;
        
