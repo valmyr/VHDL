@@ -7,6 +7,6 @@ end mySwitch;
 architecture archMySwitch of mySwitch is begin
   with  sel  select
       s <= ent1 when '1',
-           ent0 when "0',
+           ent0 when '0',
            "0000" when others;
 end archMySwitch;
