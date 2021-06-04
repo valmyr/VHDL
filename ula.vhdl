@@ -6,7 +6,7 @@ entity unidadeLogicaAritmetrica is port(   sel : in std_logic_vector(2 downto 0)
                                         output: out std_logic_vector(3 downto 0));
 end unidadeLogicaAritmetrica;
 architecture archUnidadeLogicaAritmetrica of unidadeLogicaAritmetrica is begin
-    ULA : process(sel) begin
+    ULA : process(sel,A,B) begin
       if(sel="000") then
         output <= unsigned(A) + unsigned(B);
       elsif(sel="001") then
