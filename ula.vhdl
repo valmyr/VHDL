@@ -8,9 +8,9 @@ end unidadeLogicaAritmetrica;
 architecture archUnidadeLogicAritmetrica of unidadeLogicaAritmetrica is begin
     ULA : process(sel) begin
       if(sel="000") then
-        output <= A + B;
+        output <= unsigned(A) + unsigned(B);
       elsif(sel="001") then
-        output <= A - B;
+        output <= unsigned(A) - unsigned(B);
       elsif(sel="010") then 
         output <= A and B;
       elsif(sel="011") then 
