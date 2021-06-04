@@ -25,4 +25,4 @@ architecture archUnidadeLogicAritmetrica of unidadeLogicaAritmetrica is begin
          output <= "ZZZZ"; 
       end if;
     end process ULA;
-end archUnidadeLogicaAritmentrica;
+end archUnidadeLogicaAritmetrica;
