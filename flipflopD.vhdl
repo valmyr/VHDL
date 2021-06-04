@@ -6,5 +6,6 @@ architecture archFlipFlopD of FlipFlopD is begin
     if(rising_edge(clk)) then 
       Q <= D;
       Qb <= not(Q);
+    end if
   end process FLIPFLOP_PROCESS;
 end archFlipFlopD;
