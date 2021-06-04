@@ -1,4 +1,4 @@
-entity fliFlopD is port(D, clk : in bit;
+entity flipFlopD is port(D, clk : in bit;
                         Q, Qb  : out bit);
 end flipFlopD;
 architecture archFlipFlopD of FlipFlopD is begin 
