@@ -5,7 +5,7 @@ entity unidadeLogicaAritmetrica is port(   sel : in std_logic_vector(2 downto 0)
                                           A,B : in std_logic_vector(3 downto 0);
                                         output: out std_logic_vector(3 downto 0));
 end unidadeLogicaAritmetrica;
-architecture archUnidadeLogicAritmetrica of unidadeLogicaAritmetrica is begin
+architecture archUnidadeLogicaAritmetrica of unidadeLogicaAritmetrica is begin
     ULA : process(sel) begin
       if(sel="000") then
         output <= unsigned(A) + unsigned(B);
