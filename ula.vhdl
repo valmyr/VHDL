@@ -21,7 +21,8 @@ architecture archUnidadeLogicAritmetrica of unidadeLogicaAritmetrica is begin
         output <= not(A);
       elsif(sel="110") then
         output <= not(B);
-      elsif(sel="111") then
+      else
          output <= "ZZZZ"; 
+      end if;
     end process ULA;
 end archUnidadeLogicaAritmentrica;
