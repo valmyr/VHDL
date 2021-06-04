@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.numeric_bit.all;
 use IEEE.std_logic.all;
-entity unidadeLogicAritmetrica is port(   sel : in std_logic_vector(2 downto 0);
+entity unidadeLogicaAritmetrica is port(   sel : in std_logic_vector(2 downto 0);
                                           A,B : in std_logic_vector(3 downto 0);
                                         output: out std_logic_vector(3 downto 0));
 end unidadeLogicaAritmetrica;
