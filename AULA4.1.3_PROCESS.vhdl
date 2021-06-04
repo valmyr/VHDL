@@ -12,4 +12,4 @@ architecture archMyFunction of myFunction is begin
       F<= '0';
     end if;
   end process myFunctionLabel;
-end archMyfunction;
+end archMyFunction;
